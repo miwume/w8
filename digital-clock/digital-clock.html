@@ -19,7 +19,7 @@ if(sec < 10) { sec = "0" + sec; }
 // フォーマット
 var clock = hour + ':' + min + ':' + sec;
 
-document . getElementById( 'clock' ) . innerHTML= clock1 . toLocaleString(); // div id="clock"
+document . getElementById( 'clock' ).innerHTML= clock.toLocaleString(); // div id="clock"
 
 // 1000ミリ秒ごとに処理を実効
 window . setTimeout( "clock()", 1000);
