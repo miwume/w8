@@ -22,7 +22,7 @@ var clock1 = hour + ':' + min + ':' + sec;
 document . getElementById( 'clock-01' ) . innerHTML= clock1 . toLocaleString(); // div id="clock-01"
 
 // フォーマット②
-var clock2 = year + '年' + month + '月' + date + '日' + '(' + myDay[day] + '曜日)'  + hour + '時' + min + '分' + sec + '秒';
+var clock2 = year + '年' + month + '月' + date + '日' + ' (' + myDay[day] + '曜日) '  + hour + '時' + min + '分' + sec + '秒';
 
 document . getElementById( 'clock-02' ) . innerHTML= clock2 . toLocaleString(); // div id="clock-02"
 
@@ -34,6 +34,9 @@ window . onload = clock;
 </head>
 
 <body>
+  <h1>デジタル時計 簡易Ver.</h1>
   <div id="clock-01"></div>
+  <br>
+  <h1>デジタル時計 詳細Ver.</h1>
 　　　　<div id="clock-02"></div>
 </body>
