@@ -1,3 +1,9 @@
-var clock = hour + ':' + min + ':' + sec;
+// フォーマット①
+var clock1 = hour + ':' + min + ':' + sec;
 
-document . getElementById( 'clock' ).innerHTML = clock . toLocaleString(); // div id="clock"
+document . getElementById( 'clock-01' ) . innerHTML= clock1 . toLocaleString(); // div id="clock-01"
+
+// フォーマット②
+var clock2 = year + '年' + month + '月' + day + '日' + '（' + myDay[day] + '曜日）'  + hour + '時' + min + '分' + sec + '秒";
+
+document . getElementById( 'clock-02' ) . innerHTML= clock2 . toLocaleString(); // div id="clock-02"
